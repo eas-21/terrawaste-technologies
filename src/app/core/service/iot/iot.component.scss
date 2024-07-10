@@ -64,3 +64,29 @@
     width:450px;
     height:450px;
     }
+
+    @media (max-width: 768px) {
+      .geoimage{ width: -webkit-fill-available;
+        height: 380px;
+        }
+        .banner-text {
+          position: absolute;
+          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, 0.4);
+          color: white;
+          border: 1px solid #f1f1f1;
+          position: absolute;
+          top: 50%;
+          left: 44%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 100%;
+          padding: 20px;        
+          display: table-row;
+          text-wrap: wrap;
+          text-align: left;
+          font-size: 16px;
+        }}
+        
+        
+    

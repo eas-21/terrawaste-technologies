@@ -1,1 +1,141 @@
-<p>project works!</p>
+ <!-- Page Header Start -->
+ <div class="container-fluid page-header py-2">
+    <div class="container py-5">
+        <h3 class="display-6 text-primary mb-3 animated slideInDown">Project</h3>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-secondary" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-secondary" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-secondary active" aria-current="page">Project</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Projects Start -->
+<div class="container-xxl py-3">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
+            <h1 class="display-5 mb-5">Our Projects</h1>
+        </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-5" id="portfolio-flters">
+                    <li class="mx-2 active" data-filter="*" (click)="openProjects('All')">All</li>
+                    <li class="mx-2" data-filter=".first" (click)="openProjects('Complete Projects')">Complete Projects</li>
+                    <li class="mx-2" data-filter=".second" (click)="openProjects('Ongoing Projects')">Ongoing Projects</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row g-4 portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s" *ngFor="let project of projects">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100" src={{project.url}} alt="">
+                    <div class="text-center p-4">
+                        <p class="text-primary mb-2">{{project.heading}}</p>
+                        <h5 class="lh-base mb-0">{{project.content}}</h5>
+                    </div>
+                    <div class="portfolio-text text-center bg-white p-4">
+                        <p class="text-primary mb-2">{{project.heading}}</p>
+                        <h5 class="lh-base mb-3">{{project.content}}</h5>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href={{project.url}} data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100" src="assets/images/portfolio-2.jpg" alt="">
+                    <div class="text-center p-4">
+                        <p class="text-primary mb-2">Construction of Sewage Treatment Plant, Haryana</p>
+                        <h5 class="lh-base mb-0">Solid waste management & Construction of Sewage Treatment Plant</h5>
+                    </div>
+                    <div class="portfolio-text text-center bg-white p-4">
+                        <p class="text-primary mb-2">Construction of Sewage Treatment Plant</p>
+                        <h5 class="lh-base mb-3">Solid waste management & Construction of Sewage Treatment Plant</h5>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="assets/images/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100" src="assets/images/portfolio-3.jpg" alt="">
+                    <div class="text-center p-4">
+                        <p class="text-primary mb-2">Waste Management Program, Rajasthan</p>
+                        <h5 class="lh-base mb-0">Door to door waste collection, cleaning of roads/ lanes, segregation of waste, composting from wet waste and awareness generation.</h5>
+                    </div>
+                    <div class="portfolio-text text-center bg-white p-4">
+                        <p class="text-primary mb-2">Waste Management Program, Rajasthan</p>
+                        <h5 class="lh-base mb-3">Door to door waste collection, cleaning of roads/ lanes, segregation of waste, composting from wet waste and awareness generation.</h5>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="assets/images/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100" src="assets/images/portfolio-4.jpg" alt="">
+                    <div class="text-center p-4">
+                        <p class="text-primary mb-2">Zero Waste Initiative, Maharastra</p>
+                        <h5 class="lh-base mb-0">With the support of the local municipal corporation, replicated a successful model of Zero Waste ward at different wards</h5>
+                    </div>
+                    <div class="portfolio-text text-center bg-white p-4">
+                        <p class="text-primary mb-2">Zero Waste Initiative, Maharastra</p>
+                        <h5 class="lh-base mb-3">With the support of the local municipal corporation, replicated a successful model of Zero Waste ward at different wards</h5>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="assets/images/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100" src="assets/images/portfolio-5.jpg" alt="">
+                    <div class="text-center p-4">
+                        <p class="text-primary mb-2">Integrated Solid waste Management Project, JMC</p>
+                        <h5 class="lh-base mb-0">Integrated Solid waste Management Project, by NAFED (National Agricultural Co operative Marketing Federation of India)</h5>
+                    </div>
+                    <div class="portfolio-text text-center bg-white p-4">
+                        <p class="text-primary mb-2">Integrated Solid waste Management Project, JMC</p>
+                        <h5 class="lh-base mb-3">Integrated Solid waste MAnagement Project, by NAFED( National Agricultural Co operative Marketing Federation of India)</h5>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="assets/images/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100" src="assets/images/portfolio-6.jpg" alt="">
+                    <div class="text-center p-4">
+                        <p class="text-primary mb-2">Compost & RDF Plant, Sheety Atmakur </p>
+                        <h5 class="lh-base mb-0">Composting for organic waste with dry waste RDF bailing along with recyclables recovery process.</h5>
+                    </div>
+                    <div class="portfolio-text text-center bg-white p-4">
+                        <p class="text-primary mb-2">Compost & RDF Plant, Sheety Atmakur</p>
+                        <h5 class="lh-base mb-3">
+                            Composting for organic waste with dry waste RDF bailing along with recyclables recovery process.</h5>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="assets/images/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
+
+<app-scroll-top></app-scroll-top>

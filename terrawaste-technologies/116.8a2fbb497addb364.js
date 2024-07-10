@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkterrawaste_technologies=self.webpackChunkterrawaste_technologies||[]).push([[116],{116:(a,n,o)=>{o.r(n),o.d(n,{ServiceModule:()=>c});var t=o(895),r=o(256);let c=(()=>{class e{}return e.\u0275fac=function(u){return new(u||e)},e.\u0275mod=r.oAB({type:e}),e.\u0275inj=r.cJS({imports:[t.ez]}),e})()}}]);

@@ -65,9 +65,22 @@
     height:450px;
     }
 
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      /* CSS */
+      .geoimage {
+        width: -webkit-fill-available;
+        height: 600px;
+    }
+      }
+      
+
     @media (max-width: 768px) {
       .geoimage{ width: -webkit-fill-available;
-        height: 380px;
+        height: 500px;
+        }
+        .analytics{
+          width:-webkit-fill-available;
+          height: 450px;
         }
         .banner-text {
           position: absolute;

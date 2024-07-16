@@ -11,7 +11,7 @@ import { ContactComponent } from './core/contact/contact.component';
 import { ProjectComponent } from './core/project/project.component';
 import { ServiceComponent } from './core/service/service.component';
 import { IOTComponent } from './core/service/iot/iot.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { IOTComponent } from './core/service/iot/iot.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

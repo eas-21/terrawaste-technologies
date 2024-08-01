@@ -12,6 +12,10 @@ import { ProjectComponent } from './core/project/project.component';
 import { ServiceComponent } from './core/service/service.component';
 import { IOTComponent } from './core/service/iot/iot.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BFPPlantComponent } from './core/service/bfp-plant/bfp-plant.component';
+import { BiogasComponent } from './core/service/biogas/biogas.component';
+import { WasteSortingComponent } from './core/service/waste-sorting/waste-sorting.component';
+import { FertilizingComponent } from './core/service/fertilizing/fertilizing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     ProjectComponent,
     ServiceComponent,
-    IOTComponent
+    IOTComponent,
+    BFPPlantComponent ,
+    BiogasComponent,
+    WasteSortingComponent,
+    FertilizingComponent
   ],
   imports: [
     BrowserModule,

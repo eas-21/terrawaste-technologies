@@ -20,7 +20,7 @@
                 <div class="btn-sm-square rounded-circle bg-primary me-2">
                     <small class="fa fa-phone-alt text-white"></small>
                 </div>
-                <small>+91 12345 67890</small>
+                <small>+91 7339048120/ +91 8008999901</small>
             </div>
             <div class="h-100 d-inline-flex align-items-center py-3">
                 <div class="btn-sm-square rounded-circle bg-primary me-2">
@@ -50,11 +50,19 @@
             <a (click)="goto('about')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                 class="nav-item nav-link">About</a>
             <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
-            <a (click)="goto('project')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                class="nav-item nav-link">Project</a>
+            <!-- <a (click)="goto('project')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                class="nav-item nav-link">Project</a> -->
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
                 <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a (click)="goto('sorting')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    class="dropdown-item">Waste Sorting</a>
+                <a (click)="goto('bfb')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    class="dropdown-item">BFB Plant</a>
+                    <a (click)="goto('biogas')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    class="dropdown-item">Biogas</a>
+                <a (click)="goto('fertilize')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                    class="dropdown-item">Fertiliing Line</a>
                     <a (click)="goto('service')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                         class="dropdown-item">Door to Door Waste Collection</a>
                     <a (click)="goto('IOT')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
@@ -91,7 +99,7 @@
                 <h5 class="text-light mb-4">Address</h5>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Flat No 101, Surya Mansion, Vysya Bank Colony,
                     Old Bowenpally, Secunderabad, Telungana -500011, India.</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7339048120/ +91 8008999901</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@twt.bio</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
@@ -106,19 +114,20 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-light mb-4">Services</h5>
-                <a class="btn btn-link" (click)="goto('service')">Garbage Collection</a>
+                <a class="btn btn-link" (click)="goto('service')">Door to Door Collection</a>
                 <a class="btn btn-link" (click)="goto('IOT')">Vehicle Tracking using IoT</a>
-                <!-- <a class="btn btn-link" href="">Alarm Systems</a>
-                    <a class="btn btn-link" href="">CCTV & Video</a>
-                    <a class="btn btn-link" href="">Smart Home</a> -->
+                <a class="btn btn-link"(click)="goto('biogas')">Biogas</a>
+                    <a class="btn btn-link" (click)="goto('bfb')">BFB Power Plant</a>
+                    <a class="btn btn-link" (click)="goto('sorting')">Waste Sorting</a>
+                    <a class="btn btn-link" (click)="goto('fertilize')">Fertilizing Line</a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-light mb-4">Quick Links</h5>
                 <a class="btn btn-link" (click)="goto('about')">About Us</a>
                 <a class="btn btn-link" (click)="goto('contact')">Contact Us</a>
-                <a class="btn btn-link" (click)="goto('service')">Our Services</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" (click)="goto('contact')">Support</a>
+                <a class="btn btn-link" (click)="goto('sorting')">Our Services</a>
+                <!-- <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" (click)="goto('contact')">Support</a> -->
             </div>
             <!-- <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>

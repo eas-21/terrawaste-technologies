@@ -1,0 +1,106 @@
+.para-sorting {
+
+    padding: 10px 70px;
+    line-height: 40px;
+}
+.para-sorting-center {
+
+    padding: 10px 280px;
+    line-height: 30px;
+}
+.geoimage {
+    width: 550px;
+    height: 400px;
+}
+.generator{
+    width:250px;
+    height: 250px; 
+    padding-bottom: 100px;
+}
+ul {
+    display: table-row;
+    list-style: none;
+
+}
+
+ul li {
+    display: table-row;
+    color: #4d5156;;
+    text-wrap: wrap;
+    text-align: left;
+    font-size: 1em;
+}
+
+ul li::before {
+    display: table-cell;
+    text-align: left;
+    content: "+";
+    font-size: 1em;
+    font-weight: bold;
+    color: #FF404C;
+    padding-right: 12px;
+    padding-left: 120px;
+
+}
+
+ul li:not(:first-of-type)::before {
+    padding-top: 16px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    ul li::before {
+        text-align: left;
+
+        font-size: 1em;
+        font-weight: bold;
+        color: #FF404C;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+    /* CSS */
+    .geoimage {
+        width: 600px;
+        height: 600px;
+    }
+
+    .para-sorting {
+        line-height: 40px;
+       margin: 0px;
+    }
+    .generator{
+        padding-top: 50px;
+            width: -webkit-fill-available;
+            padding: 50px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    ul li::before {
+        text-align: left;
+
+        font-size: 1em;
+        font-weight: bold;
+        color: #FF404C;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+
+    .geoimage {
+        padding-top: 50px;
+        width: -webkit-fill-available;
+    }
+.generator{
+    padding-top: 50px;
+        width: -webkit-fill-available;
+        padding: 50px;
+}
+    .para-sorting {
+        line-height: 40px;
+        padding: 20px;
+    }
+    .para-sorting-center {
+
+        margin: 10px;
+        line-height: 30px;
+    }
+}

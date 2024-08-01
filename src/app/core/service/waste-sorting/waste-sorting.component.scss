@@ -1,0 +1,71 @@
+.para-sorting {
+
+    padding: 10px 70px;
+    line-height: 40px;
+}
+
+ul {
+    display: table-row;
+    list-style: none;
+
+}
+
+ul li {
+    display: table-row;
+    color: #4d5156;;
+    text-wrap: wrap;
+    text-align: left;
+    font-size: 1em;
+}
+
+ul li::before {
+    display: table-cell;
+    text-align: left;
+    content: "+";
+    font-size: 1em;
+    font-weight: bold;
+    color: #FF404C;
+    padding-right: 12px;
+    padding-left: 120px;
+
+}
+
+ul li:not(:first-of-type)::before {
+    padding-top: 16px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* CSS */
+    .geoimage {
+        width: -webkit-fill-available;
+        height: 600px;
+    }
+
+    .para-sorting {
+        line-height: 40px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    ul li::before {
+        text-align: left;
+
+        font-size: 1em;
+        font-weight: bold;
+        color: #FF404C;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+
+    .geoimage {
+        padding-top: 50px;
+        width: -webkit-fill-available;
+    }
+
+    .para-sorting {
+        line-height: 40px;
+        padding: 0px;
+    }
+}

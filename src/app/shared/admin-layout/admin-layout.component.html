@@ -1,21 +1,21 @@
 <!-- Topbar Start -->
-<div class="container-fluid bg-dark px-5">
+<div class="container-fluid bg-light px-5">
     <div class="row gx-4 d-none d-lg-flex">
         <div class="col-lg-6 text-start">
             <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <div class="btn-sm-square rounded-circle bg-primary me-2">
+                <!-- <div class="btn-sm-square rounded-circle bg-primary me-2">
                     <small class="fa fa-map-marker-alt text-white"></small>
                 </div>
-                <small>Bowenpally, Secunderabad, Telungana -500011, India.</small>
+                <small>Bowenpally, Secunderabad, Telungana -500011, India.</small> -->
             </div>
-            <div class="h-100 d-inline-flex align-items-center py-3">
+            <!-- <div class="h-100 d-inline-flex align-items-center py-3">
                 <div class="btn-sm-square rounded-circle bg-primary me-2">
                     <small class="fa fa-envelope-open text-white"></small>
                 </div>
                 <small>info@twt.bio</small>
-            </div>
+            </div> -->
         </div>
-        <div class="col-lg-6 text-end">
+        <!-- <div class="col-lg-6 text-end">
             <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                 <div class="btn-sm-square rounded-circle bg-primary me-2">
                     <small class="fa fa-phone-alt text-white"></small>
@@ -28,16 +28,16 @@
                 </div>
                 <small>Mon - Sat : 9AM - 7PM</small>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- Topbar End -->
 
 
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-20 px-4 px-lg-5">
     <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <img src="assets/images/logo.png" alt="" style="width: 80px; height:60px">
+        <img src="assets/images/logo.png" alt="" style="width: 120px; height:100px; padding: 12px;">
         <!-- <h2 class="m-0 text-primary">Securex</h2> -->
     </a>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -62,7 +62,7 @@
                     <a (click)="goto('biogas')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                     class="dropdown-item">Biogas</a>
                 <a (click)="goto('fertilize')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                    class="dropdown-item">Fertiliing Line</a>
+                    class="dropdown-item">Fertilizing Line</a>
                     <a (click)="goto('service')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                         class="dropdown-item">Door to Door Waste Collection</a>
                     <a (click)="goto('IOT')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
@@ -74,7 +74,7 @@
             </div>
             <a (click)="goto('contact')"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-item nav-link">Contact</a>
         </div>
-        <div class="h-100 d-lg-inline-flex align-items-center d-none">
+        <!-- <div class="h-100 d-lg-inline-flex align-items-center d-none">
             <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
                     class="fab fa-facebook-f"></i></a>
             <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
@@ -83,7 +83,7 @@
                     class="fab fa-linkedin-in"></i></a>
             <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
                     class="fab fa-instagram"></i></a>
-        </div>
+        </div> -->
     </div>
 </nav>
 <!-- Navbar End -->
@@ -97,11 +97,10 @@
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-light mb-4">Address</h5>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Flat No 101, Surya Mansion, Vysya Bank Colony,
-                    Old Bowenpally, Secunderabad, Telungana -500011, India.</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Hyderabad, India.</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7339048120/ +91 8008999901</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@twt.bio</p>
-                <div class="d-flex pt-2">
+                <!-- <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
                             class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
@@ -110,22 +109,23 @@
                             class="fab fa-youtube"></i></a>
                     <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
                             class="fab fa-linkedin-in"></i></a>
-                </div>
+                </div> -->
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-light mb-4">Services</h5>
                 <a class="btn btn-link" (click)="goto('service')">Door to Door Collection</a>
-                <a class="btn btn-link" (click)="goto('IOT')">Vehicle Tracking using IoT</a>
+                <a class="btn btn-link" (click)="goto('IOT')">Vehicle Tracking using IoT</a><br>
+                <a> &nbsp;&nbsp;Waste to Energy</a><br><br>
                 <a class="btn btn-link"(click)="goto('biogas')">Biogas</a>
                     <a class="btn btn-link" (click)="goto('bfb')">BFB Power Plant</a>
-                    <a class="btn btn-link" (click)="goto('sorting')">Waste Sorting</a>
+                    <!-- <a class="btn btn-link" (click)="goto('sorting')">Waste Sorting</a> -->
                     <a class="btn btn-link" (click)="goto('fertilize')">Fertilizing Line</a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-light mb-4">Quick Links</h5>
                 <a class="btn btn-link" (click)="goto('about')">About Us</a>
                 <a class="btn btn-link" (click)="goto('contact')">Contact Us</a>
-                <a class="btn btn-link" (click)="goto('sorting')">Our Services</a>
+                <!-- <a class="btn btn-link" (click)="goto('sorting')">Our Services</a> -->
                 <!-- <a class="btn btn-link" href="">Terms & Condition</a>
                 <a class="btn btn-link" (click)="goto('contact')">Support</a> -->
             </div>
@@ -147,12 +147,12 @@
 <div class="container-fluid py-4" style="background: #000000;">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="col-lg-12 col-md-6 text-center text-md-center mb-3 mb-md-0">
                 &copy; <a class="border-bottom" href="#">TerraWaste Technologies</a>, All Right Reserved.
             </div>
-            <div class="col-md-6 text-center text-md-end">
+            <div class="col-md-12 text-center text-md-end">
                 <!--/*** This template is free as long as you keep the footer authorâ€™s credit link/attribution link/backlink. If you'd like to use the template without the footer authorâ€™s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                Designed By Ads Information Systems Private Limited
+                <!-- Designed By Ads Information Systems Private Limited -->
             </div>
         </div>
     </div>
